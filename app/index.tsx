@@ -19,7 +19,7 @@ export default function LandingScreen() {
       {/* Start Button in center */}
       <Animatable.View animation="zoomIn" duration={600} style={styles.buttonContainer}>
         <View style={styles.buttonShadow}>
-          <TouchableOpacity style={styles.startButton} onPress={() => router.push("/screens/SetupScreen")} activeOpacity={0.8}>
+          <TouchableOpacity style={styles.startButton} onPress={() => router.push("/Games")} activeOpacity={0.8}>
             <Text style={styles.startButtonText}>ابدأ</Text>
           </TouchableOpacity>
         </View>
