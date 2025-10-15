@@ -1,6 +1,6 @@
 import { useRouter } from "expo-router";
 import React from "react";
-import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Image, StatusBar, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import * as Animatable from "react-native-animatable";
 
 export default function LandingScreen() {
@@ -8,6 +8,8 @@ export default function LandingScreen() {
 
   return (
     <View style={styles.container}>
+      <StatusBar hidden={true} />
+
       {/* Logo at top */}
       <Animatable.View animation="zoomIn" duration={600} style={styles.logoContainer}>
         <Image source={require("../assets/logo.png")} style={styles.logo} resizeMode="contain" />

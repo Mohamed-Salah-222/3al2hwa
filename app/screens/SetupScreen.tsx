@@ -1,6 +1,6 @@
 import { useRouter } from "expo-router";
 import React from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StatusBar, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import * as Animatable from "react-native-animatable";
 
 export default function SetupScreen() {
@@ -8,6 +8,8 @@ export default function SetupScreen() {
 
   return (
     <View style={styles.container}>
+        <StatusBar hidden={true} />
+
       <View style={styles.decorCircle1} />
       <View style={styles.decorCircle2} />
       <View style={styles.decorCircle3} />
