@@ -26,13 +26,7 @@ export default function SetupScreen() {
 
         {/* Quick Match Button */}
         <Animatable.View animation="zoomIn" duration={600}>
-          <TouchableOpacity
-            style={styles.modeButton}
-            onPress={() => {
-              // Navigate to quick game setup
-            }}
-            activeOpacity={0.8}
-          >
+          <TouchableOpacity style={styles.modeButton} onPress={() => router.push("/screens/QuickMatchSetup")} activeOpacity={0.8}>
             <Text style={styles.buttonText}>ماتش سريع</Text>
           </TouchableOpacity>
         </Animatable.View>

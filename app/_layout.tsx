@@ -10,6 +10,7 @@ export default function RootLayout() {
     >
       <Stack.Screen name="index" />
       <Stack.Screen name="screens/SetupScreen" />
+      <Stack.Screen name="screens/QuickMatchSetup" />
     </Stack>
   );
 }
