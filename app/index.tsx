@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   startButton: {
     backgroundColor: "#349aae",
     paddingHorizontal: 60,
-    paddingVertical: 20,
+    paddingVertical: 13,
     borderRadius: 30,
     marginTop: -225,
   },
@@ -99,6 +99,6 @@ const styles = StyleSheet.create({
     color: "#a75f4a",
     fontWeight: "500",
     position: "absolute",
-    bottom: 65, // Adjust this number to move it closer/further from logo
+    bottom: 65,
   },
 });

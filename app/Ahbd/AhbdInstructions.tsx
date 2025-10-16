@@ -2,22 +2,23 @@ import { useRouter } from "expo-router";
 import React from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function BiddingInstructions() {
+export default function AhbdInstructions() {
   const router = useRouter();
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>لبس صاحبك</Text>
+      <Text style={styles.title}>أهبد صح</Text>
 
       <View style={styles.rulesContainer}>
-        <Text style={styles.rule}>• كل فريق يراهن على صاحبه - كم اسماً سيقول في 30 ثانية</Text>
-        <Text style={styles.rule}>• لكل فريق 3 أسماء غلط كحد أقصى</Text>
-        <Text style={styles.rule}>• إذا قال أكثر من 3 أخطاء، يخسر الفريق</Text>
-        <Text style={styles.rule}>• إذا لم يكمل الفريق في الوقت المحدد، الفريق الآخر يأخذ النقطة</Text>
+        <Text style={styles.rule}>• يتم سؤال سؤال إجابته رقم</Text>
+        <Text style={styles.rule}>• الفريق الخصم يضع اختياراً غلط</Text>
+        <Text style={styles.rule}>• الإجابة الصحيحة = نقطة</Text>
+        <Text style={styles.rule}>• اختيار الخصم الغلط = نقطة للفريق الآخر</Text>
+        <Text style={styles.rule}>• الإجابة المحايدة لا تؤثر على النقاط</Text>
         <Text style={styles.rule}>• اول فريق يجيب 7 نقط بيكسب</Text>
       </View>
 
-      <TouchableOpacity style={styles.button} onPress={() => router.push("./BiddingGame")}>
+      <TouchableOpacity style={styles.button} onPress={() => router.push("./AhbdGame")}>
         <Text style={styles.buttonText}>ابدأ اللعبة</Text>
       </TouchableOpacity>
     </View>

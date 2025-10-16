@@ -1,17 +1,19 @@
 import { Stack } from "expo-router";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function RootLayout() {
   return (
-    <Stack
-      screenOptions={{
-        headerShown: false,
-        animation: "none", // Changed from 'slide_from_right'
-      }}
-    >
-      <Stack.Screen name="index" />
-      <Stack.Screen name="screens/SetupScreen" />
-      <Stack.Screen name="screens/QuickMatchSetup" />
-      <Stack.Screen name="games/PasswordGame" />
-    </Stack>
+    <SafeAreaProvider>
+      <Stack
+        screenOptions={{
+          headerShown: false,
+          animation: "none",
+        }}
+      >
+        <Stack.Screen name="index" />
+        <Stack.Screen name="Games" />
+        {/* Add other screens */}
+      </Stack>
+    </SafeAreaProvider>
   );
 }
